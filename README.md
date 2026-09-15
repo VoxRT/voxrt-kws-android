@@ -7,7 +7,7 @@ Streaming multi-keyword spotter on the **VoxRT** custom on-device inference runt
 - Minimum Android: API 26 (Android 8.0)
 - ABIs shipped: `arm64-v8a` (NEON-accelerated, production target), `x86_64` (scalar, emulator only)
 - License: Apache-2.0 (Kotlin wrapper) · proprietary (compiled runtime, redistribution allowed via this artifact)
-- Model weights: proprietary in-house (synthetic + open training data; no upstream license obligations)
+- Model weights: proprietary to Wiseport Ltd.; not derived from third-party model checkpoints subject to attribution or copyleft requirements
 
 ---
 
@@ -274,4 +274,4 @@ object CpuAffinity {
 - **Compiled runtime** (`libvoxrt_kws.so`): proprietary, redistributable under the terms in [`LICENSE-BINARY`](LICENSE-BINARY).
 - **KWS model** (`voxrt_kws.vxrt`): proprietary, distributed separately under the [`voxrt-kws-models`](https://github.com/VoxRT/voxrt-kws-models) license terms.
 
-For commercial integration, custom vocabularies, or licensing terms beyond redistribution of the unmodified library, contact help@voxrt.com.
+For commercial integration, custom vocabularies, or licensing terms beyond incorporating the unmodified runtime into your own applications, contact help@voxrt.com.
